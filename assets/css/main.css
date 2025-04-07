@@ -58,6 +58,36 @@
 }
 
 /*--------------------------------------------------------------
+# Ajouts
+--------------------------------------------------------------*/
+.scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px 0;
+}
+
+.scroll-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+}
+
+.service-item {
+  min-width: 250px; /* taille des cartes */
+  flex-shrink: 0;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.service-item img {
+  max-width: 60px;
+  margin-bottom: 10px;
+}
+/*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
